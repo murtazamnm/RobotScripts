@@ -15,11 +15,13 @@ Suite Teardown    Cleanup some data
 User can search for products
     [Documentation]  This is some basic info about the test
     [Tags]  smoke
-    Amazon.Search For Products
+    Amazon.Go To Website
 
 User must sign in to check out
     [Documentation]  This is some basic info about the test
     [Tags]  smoke
+    Go To Website
     Amazon.Search For Products
+    Amazon.Select Product from Search Results
     Amazon.Add Product to Cart
     Amazon.Begin Checkout
