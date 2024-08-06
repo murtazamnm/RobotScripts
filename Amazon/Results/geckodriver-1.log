@@ -1,0 +1,25 @@
+1722931014089	geckodriver	INFO	Listening on 127.0.0.1:51845
+1722931017174	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51846" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\modar\\AppData\\Local\\Temp\\rust_mozprofilek92OFl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1722931017485	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1722931017554	Marionette	INFO	Listening on port 51853
+WebDriver BiDi listening on ws://127.0.0.1:51846
+Read port: 51853
+1722931017746	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51846/devtools/browser/d9bf4963-5d78-4d7c-ba9b-c06d8a859b58
+JavaScript warning: https://www.amazon.com/, line 1844: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.amazon.com."
+JavaScript warning: https://www.amazon.com/s?k=Ferrari+458&ref=nb_sb_noss, line 5486: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1722931024056	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1722931024854	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://www.amazon.com/55tech-Ferrari-Storage-Protect-Elements/dp/B0CK6JWZTC/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.XKhVfqJ7SA3iIP4_El16k2LrUxWiPgYjLrkBFMeXTYJO2kqgIxnGaXmZwTDkC89zsa7YH1eujxveUqvecrsWgI7Jymrjpuz4dPz-ZYAr0Cem3Us_uFRONcH3lVImkWn3GAiEZSB2BRz4AmfsQHmsMTNMiuxzi3-RCavAHHCNEyyxtOeA8Zl--QCxgpAON4gOzAqrsSvMjl2g5k4ZsP0klz-DveD4bA9LiCOfmdm2vtPfMIdUzM09IvN6qFUg1WmVtwtXHcEPWNSejol4XoR-bDjLTxvvc7v8hwEdhLYPohI.NFVlsKHl1A6-y8NBPh4xPYrb2Mr5GyvBqOuvkbz_wRY&dib_tag=se&keywords=Ferrari+458&qid=1722931021&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1, line 10907: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.amazon.com."
+1722931027795	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://www.amazon.com/cart/add-to-cart/ref=dp_start-bbf_1_glance, line 3026: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.amazon.com."
+JavaScript warning: https://images-na.ssl-images-amazon.com/images/I/815lxP6FNyL.js?AUIClients/FWCIMAssets, line 298: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1722931035960	Marionette	INFO	Stopped listening on port 51853
+Dynamically enable window occlusion 1

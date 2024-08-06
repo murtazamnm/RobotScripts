@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.4 on win32)" generated="2024-08-05T15:19:57.519155" rpa="false" schemaversion="5">
+<suite id="s1" name="Crm" source="C:\Development\Robot-Scripts\CRM_1\tests\Crm.robot">
+<test id="s1-t1" name="should be able to open a browser" line="10">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-08-05T15:19:57.813970" level="INFO">Starting the test case!</msg>
+<arg>Starting the test case!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-08-05T15:19:57.813970" elapsed="0.000998"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-05T15:19:57.814968" level="INFO">Opening browser 'ff' to base url 'https://automationplayground.com/crm/'.</msg>
+<arg>https://automationplayground.com/crm/</arg>
+<arg>ff</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-05T15:19:57.814968" elapsed="7.415795"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>1006</tag>
+<tag>Contacts</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-08-05T15:19:57.812965" elapsed="7.417798"/>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="PASS" start="2024-08-05T15:19:57.521159" elapsed="7.712111"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">1006</stat>
+<stat pass="1" fail="0" skip="0">Contacts</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Crm">Crm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
