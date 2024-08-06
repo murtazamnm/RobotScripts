@@ -8,3 +8,9 @@ Begin Web Test
 
 End Web Test
     Close Browser
+
+Initialize Some Data
+    log     starting testing....
+
+Cleanup Some Data
+    log     end testing

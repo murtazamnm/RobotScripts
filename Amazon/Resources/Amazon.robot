@@ -16,7 +16,7 @@ Begin Checkout
     Click Link  xpath=/html/body/div[1]/div[1]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/span/div/div/div[3]/div[1]/h2/a
     Wait Until Page Contains  Back to results
     Click Button  id=add-to-cart-button
-    Sleep  3
+#    Sleep  3
     Wait Until Page Contains    Added to Cart
     Wait Until Page Contains  Cart Subtotal
     Click Button  name=proceedToRetailCheckout
