@@ -40,3 +40,13 @@ Set List Variables
     log    ${my_list_variable_two[1]}
     log    ${my_list_variable_two[2]}
 
+Pass Variables
+    [Documentation]  This is a test to see how to pass the variables
+    [Tags]  testing_passing
+    Begin Web Test      ${MAIN_URL}    edge
+
+*** Keywords ***
+
+Begin Web Test
+    [Arguments]    ${url}    ${browser}
+    open browser    ${url}  ${browser}
