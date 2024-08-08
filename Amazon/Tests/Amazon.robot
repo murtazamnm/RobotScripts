@@ -5,8 +5,8 @@ Resource    ../Resources/Common.robot
 # suite setup will run before and after all the test *** test cases ***
 # test setup will run before and after each test case
 #Suite Setup    Initialize some data
-#Test Setup    Begin Web Test
-#Test Teardown    End Web Test
+Test Setup    Begin Web Test
+Test Teardown    End Web Test
 #Suite Teardown    Cleanup some data
 
 *** Variables ***
@@ -49,8 +49,9 @@ Pass Variables
 
 *** Keywords ***
 
-Begin Web Test
-
+Begin Passing Test
+    [Documentation]  This is a test to see how to pass the variables
+    [Tags]  testing_passing
     [Arguments]    @{args}
 #    [Arguments]    ${url}    ${browser}
     open browser    ${args[0]}    ${args[1]}

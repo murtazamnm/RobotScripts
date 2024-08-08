@@ -1,42 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.4 on win32)" generated="2024-08-08T15:14:24.664416" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.11.4 on win32)" generated="2024-08-08T16:05:59.972838" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon" source="C:\Development\Robot-Scripts\RobotScripts\Amazon\tests\amazon.robot">
-<test id="s1-t1" name="Pass Variables" line="43">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-08-08T15:14:24.911411" level="INFO">@{url_and_browser} = [ https://amazon.com | ff ]</msg>
-<var>@{url_and_browser}</var>
-<arg>https://amazon.com</arg>
-<arg>ff</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-08-08T15:14:24.911411" elapsed="0.000000"/>
-</kw>
-<kw name="Begin Web Test">
+<test id="s1-t1" name="User can search for products" line="18">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-08T15:14:24.913410" level="INFO">Opening browser 'ff' to base url 'https://amazon.com'.</msg>
-<arg>${args[0]}</arg>
-<arg>${args[1]}</arg>
+<msg time="2024-08-08T16:06:00.305820" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-08T15:14:24.912410" elapsed="9.807782"/>
+<status status="PASS" start="2024-08-08T16:06:00.305820" elapsed="6.385430"/>
 </kw>
-<arg>@{url_and_browser}</arg>
-<status status="PASS" start="2024-08-08T15:14:24.911411" elapsed="9.809804"/>
+<status status="PASS" start="2024-08-08T16:06:00.304829" elapsed="6.387426"/>
 </kw>
-<doc>This is a test to see how to pass the variables</doc>
-<tag>testing_passing</tag>
-<status status="PASS" start="2024-08-08T15:14:24.910411" elapsed="9.810804"/>
+<kw name="Go To Website" owner="Amazon">
+<kw name="Load" owner="LandingPage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-08-08T16:06:06.694256" level="INFO">Opening url 'https://www.amazon.com'</msg>
+<arg>${MAIN_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-08-08T16:06:06.694256" elapsed="8.899609"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:06.693252" elapsed="8.900613"/>
+</kw>
+<kw name="Verfiy Page Loaded" owner="LandingPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Account</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-08T16:06:15.594869" elapsed="0.066993"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:15.593865" elapsed="0.067997"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:06.693252" elapsed="8.968610"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-08T16:06:15.663870" elapsed="4.581678"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:15.662865" elapsed="4.582683"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>smoke</tag>
+<status status="PASS" start="2024-08-08T16:06:00.304239" elapsed="19.942306"/>
+</test>
+<test id="s1-t2" name="User must sign in to check out" line="23">
+<kw name="Begin Web Test" owner="Common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-08T16:06:20.248551" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-08T16:06:20.248551" elapsed="6.153540"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:20.247552" elapsed="6.155550"/>
+</kw>
+<kw name="Go To Website" owner="Amazon">
+<kw name="Load" owner="LandingPage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-08-08T16:06:26.405100" level="INFO">Opening url 'https://www.amazon.com'</msg>
+<arg>${MAIN_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-08-08T16:06:26.405100" elapsed="1.933337"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:26.405100" elapsed="1.933337"/>
+</kw>
+<kw name="Verfiy Page Loaded" owner="LandingPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your Account</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-08T16:06:28.339447" elapsed="0.108669"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:28.339447" elapsed="0.108669"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:26.404094" elapsed="2.044022"/>
+</kw>
+<kw name="Search For Products" owner="Amazon">
+<kw name="Search for Products" owner="TopNav">
+<kw name="Enter Search Term" owner="TopNav">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-08-08T16:06:28.451119" level="INFO">Typing text 'Asus Gaming Laptop' into text field 'id=twotabsearchtextbox'.</msg>
+<arg>${TOPNAV_SEARCH_BAR}</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-08T16:06:28.451119" elapsed="0.249986"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:28.450121" elapsed="0.250984"/>
+</kw>
+<kw name="Submit Search" owner="TopNav">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-08T16:06:28.701105" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<arg>${TOPNAV_SEARCH_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-08T16:06:28.701105" elapsed="1.712275"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:28.701105" elapsed="1.712275"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:28.450121" elapsed="1.963259"/>
+</kw>
+<kw name="Verify Seach Completed" owner="SearchResults">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>results for "${SEARCH_TERM}"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-08T16:06:30.414382" elapsed="0.080583"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:30.413380" elapsed="0.081585"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:28.449123" elapsed="2.045842"/>
+</kw>
+<kw name="Select Product from Search Results" owner="Amazon">
+<kw name="Click Product Link" owner="SearchResults">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-08-08T16:06:30.496953" level="INFO">Clicking link 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div/div[2]/div/div/div[1]/h2/a'.</msg>
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div/div[2]/div/div/div[1]/h2/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-08T16:06:30.495957" elapsed="6.840600"/>
+</kw>
+<doc>Clicks on the first products in the search results</doc>
+<status status="PASS" start="2024-08-08T16:06:30.495957" elapsed="6.840600"/>
+</kw>
+<kw name="Verify Product Selected" owner="ProductPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-08T16:06:37.337557" elapsed="0.233629"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:37.336557" elapsed="0.234629"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:30.495957" elapsed="7.075229"/>
+</kw>
+<kw name="Add Product to Cart" owner="Amazon">
+<kw name="Add Product to Cart" owner="ProductPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-08T16:06:37.573192" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-08T16:06:37.573192" elapsed="1.225780"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:37.573192" elapsed="1.225780"/>
+</kw>
+<kw name="Verify Added to Card" owner="CheckoutPage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Added to Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-08T16:06:38.799974" elapsed="0.101002"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Cart Subtotal</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-08T16:06:38.900976" elapsed="0.020002"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:38.799974" elapsed="0.121004"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:37.572200" elapsed="1.348778"/>
+</kw>
+<kw name="Begin Checkout" owner="Amazon">
+<kw name="Proceed to Checkout" owner="CheckoutPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-08-08T16:06:38.921970" level="INFO">Clicking button 'name=proceedToRetailCheckout'.</msg>
+<arg>name=proceedToRetailCheckout</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-08T16:06:38.921970" elapsed="5.123244"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:38.921970" elapsed="5.123244"/>
+</kw>
+<kw name="Verify Page Loaded" owner="CheckoutPage">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${SIGNIN_MAIN_EMAIL}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-08T16:06:44.046220" elapsed="0.068996"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:44.046220" elapsed="0.068996"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:38.921970" elapsed="5.193246"/>
+</kw>
+<kw name="End Web Test" owner="Common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-08-08T16:06:44.116212" elapsed="2.930774"/>
+</kw>
+<status status="PASS" start="2024-08-08T16:06:44.116212" elapsed="2.930774"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>smoke</tag>
+<status status="PASS" start="2024-08-08T16:06:20.247552" elapsed="26.800436"/>
 </test>
 <doc>This is some basic info about the whole suite</doc>
-<status status="PASS" start="2024-08-08T15:14:24.666418" elapsed="10.056800"/>
+<status status="PASS" start="2024-08-08T16:05:59.974812" elapsed="47.074185"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">testing_passing</stat>
+<stat pass="2" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
 </suite>
 </statistics>
 <errors>

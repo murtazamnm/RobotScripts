@@ -1,7 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
 
-
+*** Variables ***
+${TOPNAV_SEARCH_BUTTON} =       xpath=//*[@id="nav-search-submit-button"]
+${TOPNAV_SEARCH_BAR} =          id=twotabsearchtextbox
 *** Keywords ***
 
 Search for Products
@@ -9,7 +11,7 @@ Search for Products
     Submit Search
 
 Enter Search Term
-    input text    id=twotabsearchtextbox  ${SEARCH_TERM}
+    input text      ${TOPNAV_SEARCH_BAR}    ${SEARCH_TERM}
 
 Submit Search
-    click button    xpath=//*[@id="nav-search-submit-button"]
+    click button    ${TOPNAV_SEARCH_BUTTON}

@@ -1,0 +1,21 @@
+1723125980674	geckodriver	INFO	Listening on 127.0.0.1:58833
+1723125983727	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58834" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\modar\\AppData\\Local\\Temp\\rust_mozprofileRYQrNo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1723125984150	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1723125984227	Marionette	INFO	Listening on port 58843
+WebDriver BiDi listening on ws://127.0.0.1:58834
+Read port: 58843
+1723125984320	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58834/devtools/browser/fffa588f-d6c3-4b9f-bfa4-658815ea0468
+JavaScript warning: https://www.amazon.com/, line 1844: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.amazon.com."
+JavaScript warning: https://www.amazon.com/s?k=Asus+Gaming+Laptop&ref=nb_sb_noss, line 13703: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1723125993398	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://www.amazon.com/ASUS-ROG-Strix-Gaming-Laptop/dp/B0CRDCXRK2/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.igy5tfoSfv_wAqv2wPD2QE_d_jIPB7WLr33EYiwkruYFwrzGvhZiBwT26C-lV-6ERi7y67h98RY8Pt-BRD8_6U5uUN2SzsQ0RBl71EFS3yf7Zzucw8biJBxKQurTDAHf_ooRHEltz9QtL27gXpjA9adP4khKQ8Dzmbr3wYaefzJ2Fqb-gp2iJDL-ti1geUQ3oir1Jsefujj8hnODpjnSDFjA2vR_fPa7MqaEJieZz0w.s15wCIeMW2H-NdXnOv1m2GIOhBgw-L3oYqKAEzc-usc&dib_tag=se&keywords=Asus+Gaming+Laptop&qid=1723125988&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1, line 12532: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.amazon.com."
+JavaScript warning: https://www.amazon.com/cart/add-to-cart/ref=dp_start-bbf_1_glance, line 3041: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.amazon.com."
+1723126004119	Marionette	INFO	Stopped listening on port 58843
+Dynamically enable window occlusion 1
