@@ -9,7 +9,7 @@ Search for Products
     Submit Search
 
 Enter Search Term
-    input text    id=twotabsearchtextbox  Ferrari 458
+    input text    id=twotabsearchtextbox  ${SEARCH_TERM}
 
 Submit Search
     click button    xpath=//*[@id="nav-search-submit-button"]

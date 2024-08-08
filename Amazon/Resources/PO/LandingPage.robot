@@ -3,6 +3,6 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 Load
-    go to       https://www.amazon.com
+    go to       ${MAIN_URL}
 Verfiy Page Loaded
     wait until page contains        Your Account
