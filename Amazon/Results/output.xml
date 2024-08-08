@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.4 on win32)" generated="2024-08-08T15:14:24.664416" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon" source="C:\Development\Robot-Scripts\RobotScripts\Amazon\tests\amazon.robot">
+<test id="s1-t1" name="Pass Variables" line="43">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-08-08T15:14:24.911411" level="INFO">@{url_and_browser} = [ https://amazon.com | ff ]</msg>
+<var>@{url_and_browser}</var>
+<arg>https://amazon.com</arg>
+<arg>ff</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-08-08T15:14:24.911411" elapsed="0.000000"/>
+</kw>
+<kw name="Begin Web Test">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-08T15:14:24.913410" level="INFO">Opening browser 'ff' to base url 'https://amazon.com'.</msg>
+<arg>${args[0]}</arg>
+<arg>${args[1]}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-08T15:14:24.912410" elapsed="9.807782"/>
+</kw>
+<arg>@{url_and_browser}</arg>
+<status status="PASS" start="2024-08-08T15:14:24.911411" elapsed="9.809804"/>
+</kw>
+<doc>This is a test to see how to pass the variables</doc>
+<tag>testing_passing</tag>
+<status status="PASS" start="2024-08-08T15:14:24.910411" elapsed="9.810804"/>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="PASS" start="2024-08-08T15:14:24.666418" elapsed="10.056800"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">testing_passing</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

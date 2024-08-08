@@ -43,10 +43,14 @@ Set List Variables
 Pass Variables
     [Documentation]  This is a test to see how to pass the variables
     [Tags]  testing_passing
-    Begin Web Test      ${MAIN_URL}    edge
+    @{url_and_browser} =    set variable    https://amazon.com    ff
+#    Begin Web Test      ${MAIN_URL}    edge
+    Begin Web Test      @{url_and_browser}
 
 *** Keywords ***
 
 Begin Web Test
-    [Arguments]    ${url}    ${browser}
-    open browser    ${url}  ${browser}
+
+    [Arguments]    @{args}
+#    [Arguments]    ${url}    ${browser}
+    open browser    ${args[0]}    ${args[1]}

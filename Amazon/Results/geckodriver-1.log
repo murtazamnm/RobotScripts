@@ -1,0 +1,14 @@
+1723122865377	geckodriver	INFO	Listening on 127.0.0.1:63119
+1723122868486	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63120" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\modar\\AppData\\Local\\Temp\\rust_mozprofilel9QFQO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1723122868852	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1723122868941	Marionette	INFO	Listening on port 63128
+WebDriver BiDi listening on ws://127.0.0.1:63120
+Read port: 63128
+1723122869158	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63120/devtools/browser/b89ff080-22cd-4efd-aefc-170529b8ec23
+JavaScript warning: https://www.amazon.com/, line 1844: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1723122879655	Marionette	INFO	Stopped listening on port 63128
+Dynamically enable window occlusion 1
